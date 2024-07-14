@@ -1,8 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @media screen and (max-width: 576px) {
+    body{
+        width: 80%;
+        padding: 0px;
+    }
     header{
         width:100%;
         font-size: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    header div.column{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .flower-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
+    }
+    #flower-item div.flower-item div.item-1 , #flower-item div.flower-item div.item-2, #flower-item div.flower-item div.item-3{
+        width: 100%;
+        flex: 1;
+        padding-right: 140px;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:center;
+    }
+}
+
+
+
+
+@media screen and (min-width: 577px) and (max-width:990px) {
+    header{
+        width:100%;
+        font-size: 58%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -12,17 +51,36 @@
         flex-direction: column;
         width: 100%;
     }
+    .flower-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
+    }
+    #flower-item div.flower-item div.item-1 , #flower-item div.flower-item div.item-2, #flower-item div.flower-item div.item-3{
+        width: 60%;
+        text-align: center;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:center;
+        gap: 40px;
+    }
 }
+
+
 header{
     display: flex;
     background: rgba(229, 84, 115, 0.1);
-    padding-left: 240px;
-    padding-right: 240px;
+    gap: 50px;
+    padding-left: 100px;
 }
 .column{
     flex: 1;
-    width: 50%;
-    padding: 40px;
+    width: 30%;
 }
 header h1{
     color: rgb(39, 39, 39);
@@ -42,16 +100,140 @@ header p{
     letter-spacing: 0%;
     text-align: left;
 }
-header button{
+header button , #sale button{
     color: rgb(255, 255, 255);
     font-family: Lato;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0%;
-    text-align: left;
     border: none;
     padding: 20px 43px 20px 43px;
     border-radius: 8px;
     background: rgb(229, 84, 115);
+}
+#flower-item{
+    padding: 100px;
+}
+#flower-item h3{color: rgb(39, 39, 39);
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+#flower-item p{
+    color: rgba(39, 39, 39, 0.6);
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+#flower-item .flower-item{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    margin: 50px;
+    gap: 24px;
+}
+.flower-item .item-1 img{
+    width: 310px;
+    height: 428px;
+    padding: 110px 78px 0px 76px;
+}
+.flower-item .item-1{
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(167, 33, 98, 0.15);
+}
+.flower-item .item-2 img{
+    width: 370px;
+    height: 370px;
+    padding: 117px 47px 51px 47px;
+}
+.flower-item .item-2{
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(5, 151, 160, 0.15);
+}
+.flower-item .item-3 img{
+    width: 300px;
+    height: 471px;
+    padding: 67px 75px 0px 75px;
+}
+.flower-item .item-3{
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(71, 125, 17, 0.15);
+}
+#flower-item .features a{
+    color: rgba(39, 39, 39, 0.8);
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+#flower-item .features{
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    margin: 50px;
+}
+#flower-item .features .item{
+   text-align: center;
+}
+#flower-item .caption{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#flower-item .caption a{
+    color: rgb(39, 39, 39);
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+
+
+#sale{
+    border-radius: 8px;
+    background: rgba(229, 84, 115, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sale h1{
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+#sale p{
+    color: rgba(39, 39, 39, 0.6);
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+#sale button {
+    text-align: center;
+}
+#sale button a{
+    color: white;
+    text-decoration: none;
 }
